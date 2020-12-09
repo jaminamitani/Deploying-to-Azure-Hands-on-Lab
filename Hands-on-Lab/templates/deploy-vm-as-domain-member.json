@@ -82,7 +82,7 @@
     "variables": {
         "location": "[resourceGroup().location]",
 
-        "subnetRef": "[resourceID(resourceGroup().name, 'Microsoft.Network/virtualNetWorks/subnets', parameters('virtualNetworkId'), parameters('subnetName'))]",
+        "subnetRef": "[resourceID('rg-hol', 'Microsoft.Network/virtualNetWorks/subnets', parameters('virtualNetworkId'), parameters('subnetName'))]",
 
         "networkInterface": "[concat(parameters('virtualMachineName'), '-NIC')]",
 
